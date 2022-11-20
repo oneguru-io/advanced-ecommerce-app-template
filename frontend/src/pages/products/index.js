@@ -30,14 +30,23 @@ export default function Products() {
   
   return (
     <Box sx={{ p: 5 }}>
-      <Typography variant="h4">
-        Welcome to OneGuru!
-      </Typography>
+      <Box sx={{ textAlign: 'center' }}>
+        <Typography variant="h2">
+          Welcome to OneGuru!
+        </Typography>
+        <Typography>
+          Get started by editing this component.
+        </Typography>
+      </Box>
       <Box
         sx={{
-          mt: 5,
+          mt: 7,
+          mb: 7,
           display: 'flex',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+          marginRight: 'auto',
+          marginLeft: 'auto',
+          width: '1200px'
         }}
       >
         {products.map(product => (
@@ -62,6 +71,11 @@ export default function Products() {
             </CardContent>
           </Card>
         ))}
+      </Box>
+      <Box sx={{ textAlign: 'center' }}>
+        <Typography>
+          Powered by <a href="https://oneguru.io">https://oneguru.io</a>
+        </Typography>
       </Box>
     </Box>
   );
