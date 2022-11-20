@@ -8,7 +8,7 @@
 
 1. Run the template's starter
 ```Bash
-npx advanced-ecommerce-app-template my-app
+npx create-oneguru-ecom-app my-app
 ```
 
 2. Change directory to your project
